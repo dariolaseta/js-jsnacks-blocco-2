@@ -8,7 +8,7 @@ function createList(){
     return listElement;
 }
 
-for(let i = 0; i < listItems.length; i++){
+for(let i = 0; i < 10; i++){
     let generatedList = createList();
     
     list.appendChild(generatedList);
