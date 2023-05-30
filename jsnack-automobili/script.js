@@ -88,26 +88,26 @@ const cars = [
         model: "e",
         fuel: "electric",
     },
-
-    
 ];
 
 const gasArray = [];
 const dieselArray = [];
 
-/*for(i = 0; i < cars.length; i++){
-    if(cars.fuel === "gas"){
-        console.log(cars.fuel)
+for(i = 0; i < cars.length; i++){
+    const car = cars[i];
+    if(car.fuel === "gas"){
+        gasArray.push(car);
     }
 }
-console.log(gasArray);*/
 
 cars.forEach(function(item){
     if(item.fuel === "diesel"){
         dieselArray.push(item);
     }
 });
-console.log(dieselArray);
 
 let otherFuels = cars.filter(cars => cars.fuel !== "gas" && cars.fuel !== "diesel");
-console.log(otherFuels)
+
+console.log(gasArray);
+console.log(otherFuels);
+console.log(dieselArray);
