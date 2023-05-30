@@ -100,13 +100,13 @@ for(i = 0; i < cars.length; i++){
     }
 }
 
-cars.forEach(function(item){
-    if(item.fuel === "diesel"){
-        dieselArray.push(item);
+cars.forEach(function(element){
+    if(element.fuel === "diesel"){
+        dieselArray.push(element);
     }
 });
 
-let otherFuels = cars.filter(cars => cars.fuel !== "gas" && cars.fuel !== "diesel");
+const otherFuels = cars.filter(cars => cars.fuel !== "gas" && cars.fuel !== "diesel");
 
 console.log(gasArray);
 console.log(otherFuels);
